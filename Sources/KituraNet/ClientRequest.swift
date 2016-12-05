@@ -118,7 +118,7 @@ public class ClientRequest {
     ///
     /// - Parameter url: url for the request 
     /// - Parameter callback: The closure of type `Callback` to be used for the callback.
-    init(url: String, callback: @escaping Callback) {
+    public init(url: String, callback: @escaping Callback) {
         
         self.url = url
         self.callback = callback
@@ -129,7 +129,7 @@ public class ClientRequest {
     ///
     /// - Parameter options: An array of `Options' describing the request
     /// - Parameter callback: The closure of type `Callback` to be used for the callback.
-    init(options: [Options], callback: @escaping Callback) {
+    public init(options: [Options], callback: @escaping Callback) {
 
         self.callback = callback
 
